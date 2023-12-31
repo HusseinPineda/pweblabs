@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title></title>
+        <meta charset='UTF-8'>
+        <meta name = 'language' content = 'ES'>
+        <meta name = 'author' content = 'Hussein Pineda'>
+        <meta name = 'date' content = 'Dec. 26, 2023'>
+        <meta name = 'viewport' content = 'widht=device-width, initial-scale=1.0'>
+        <link rel = 'stylesheet' type = 'text/css' href = './src/style.css'>
+        <link rel = 'shortcut icon' type = 'image/ico' href = './src/logoicon.jpg'>
+
+        <title>Calculadora</title>
     </head>
     <body>
         <h1> Calculadora </h1>
 
-        <div>
-            <img alt="logo" src="">
-        </div>
 
         <h2>Ingrese su operación en el cuadro</h2>
+        <h3>Se permiten solamente operaciones básicas: suma, resta, división y multiplicación. Se puede emplear paréntesis</h3>
         <div class="calc">
 
-            <form class="ingresaDato">
-                <input class="opBox" type="text" action="answer.cgi" method="GET" name="question">
+            <form action="../cgi-bin/answer.pl" method="GET" autocomplete="off">
+                <input class="opBox" type="text" name="question">
                 <input class="send" type="submit" value="Enviar">
             </form>
 
@@ -28,7 +34,6 @@
             </div>
             <div class="logo">
                 <img src="./src/unsa-logo.png">
-            </div>
         </footer>
 
     </body>
